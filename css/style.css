@@ -1,10 +1,22 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Navigationsbar*/
 #navbar{
     background-color: black !important;
 }
 
+a.nav-link{
+    font-size: large !important;
+    font-style :normal !important;  
+}
+
 a.nav-link:hover{
     background-color: rgba(255, 255, 255, 0.2) !important;
-    color: white !important;   
+    color: white !important;
+    font-weight: bold !important;
 }
 
 a.middle
@@ -29,3 +41,150 @@ a.middle:before {
     visibility: visible;
     transform: scaleX(1);
   }
+
+  .particles-js{
+    position: relative;
+    top:0px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../pictures/backgroundImage.jpg");
+    background-size: cover !important;
+
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    word-break: break-all;
+    flex-wrap: wrap !important;
+  }
+
+
+  .seconde-line{
+   flex-basis: 100%;
+   justify-self: center !important;
+  }
+
+/*Wavy - Texte - Karim Derrouiche*/
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%, 60% {
+    transform: rotateY(360deg) 
+  }
+}
+
+/*Sliding Text - seconde Text*/
+#full-width-item{
+  flex-basis: 100%;
+}
+
+h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+h1 span {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.message {
+  background-color: yellow;
+  color: #333;
+  display: block;
+  font-weight: 900;
+  overflow:hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 10%;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1, .word2, .word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 710px;;
+  }
+   30% {
+    top: 0.2rem;
+    width: 710px;
+  } 
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+    
+  }
+  48% {
+    top: -4.5rem;
+    width: 310px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 310px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 520px;
+  }
+  95% {
+    top: -9rem;
+    width: 520px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
