@@ -84,7 +84,8 @@ h1 {
   overflow: hidden;
   position: absolute;
   width: 700px;
-  left: 10em;
+  left: 50%;
+  right: auto;
 }
 
 h1 span {
