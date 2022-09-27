@@ -3,6 +3,10 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body{
+  background-color: #F5F5F5;
+}
+
 /*Navigationsbar*/
 #navbar{
     background-color: black !important;
@@ -177,3 +181,35 @@ h1 span {
   }
 }
 
+/*Seconde Section*/
+
+#seconde_section{
+  border: thin #c0c0c0;
+  background-color: #FFF;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#strong{
+  border-bottom: 4px solid dodgerblue;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#strong:after{ /*Um die unterlinie (border-bottom) teilweise (3rem) vom links zu löschen*/
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3rem;
+  bottom:  -5px;
+  right: -0px;
+  border: 3px solid #FFF;
+}
+
+#paragraph{
+  margin: 2rem;
+  padding: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #4e4e4e;
+}
