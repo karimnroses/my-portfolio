@@ -109,7 +109,7 @@ h1 span {
   padding-left: 0.5rem;
   top: 0.2rem;
   left: 20%;
-  animation: openclose 5s ease-in-out infinite;
+  animation: openclose 10s ease-in-out infinite;
 }
 
 .word1, .word2, .word3 {
@@ -125,11 +125,11 @@ h1 span {
     width: 0;
   }
   15% {
-    width: 500px;;
+    width: 525px;;
   }
    30% {
     top: 0.2rem;
-    width: 500px;
+    width: 525px;
   } 
   33% {
     top: 0.2rem;
@@ -145,11 +145,11 @@ h1 span {
   }
   48% {
     top: -4.5rem;
-    width: 310px;
+    width: 400px;
   }
   62% {
     top: -4.5rem;
-    width: 310px;
+    width: 400px;
   }
   66% {
     top: -4.5rem;
@@ -212,4 +212,5 @@ h1 span {
   font-weight: 500;
   font-style: normal;
   color: #4e4e4e;
+  text-align: justify;
 }
