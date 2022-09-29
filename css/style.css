@@ -189,13 +189,13 @@ h1 span {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-#strong{
+.strong{
   border-bottom: 4px solid dodgerblue;
   padding-bottom: 10px;
   position: relative;
 }
 
-#strong:after{ /*Um die unterlinie (border-bottom) teilweise (3rem) vom links zu löschen*/
+.strong:after{ /*Um die unterlinie (border-bottom) teilweise (3rem) vom links zu löschen*/
   content: '';
   display: block;
   position: absolute;
@@ -213,4 +213,65 @@ h1 span {
   font-style: normal;
   color: #4e4e4e;
   text-align: justify;
+}
+
+/*Skills-Section*/
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  border: none !important;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+.skills_section{
+  background-color: #fff;
+ }
+ 
+.carousel_images{
+  width: 100px;
+  height: 100px;
+
+}
+
+.card{
+  border: none;
+  background-color: #fff;
+  filter: grayscale(90%);
+}
+
+.card:hover{
+  filter: none !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  display: none;
 }
