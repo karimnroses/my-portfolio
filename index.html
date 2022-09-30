@@ -16,7 +16,7 @@
 
 <body>
   <!--Navigation-->
-  <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="./pictures/logo.png" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -31,7 +31,7 @@
             <a class="nav-link middle" href="#skills">Skills</a>
           </li>
           <li class="nav-item px-1">
-            <a class="nav-link middle" href="#projekte">Projekte</a>
+            <a class="nav-link middle" href="#projects_section">Projekte</a>
           </li>
           <li class="nav-item px-1">
             <a class="nav-link middle" href="#kontakt">Kontakt</a>
@@ -110,9 +110,9 @@
 
   <!--Skills Section-->
   <div class="skills_section">
-  <div class="container text-center justify-content-center my-5" id="skills">
-    <h2 class="text-start m-5 pt-5"><strong class="strong">Meine Skills</strong></h2>
-    <div class="row mx-5 my-auto justify-content-center">
+  <div class="container text-center justify-content-center" id="skills">
+    <h2 class="text-start mx-5 mb-5 pt-4 "><strong class="strong">Meine Skills</strong></h2>
+    <div class="row mx-5 my-auto justify-content-center" id="skills_row">
         <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
             <div class="carousel-inner mb-5 pb-5" role="listbox">
               <!--Carousel Items-->
@@ -197,6 +197,15 @@
                   </div>
               </div>
           </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./pictures/postman.png" class="img-fluid carousel_images">
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
             <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -207,6 +216,60 @@
         </div>
     </div>
 </div>
+</div>
+
+<!--Projects Section-->
+<div id="projects_section">
+  <div class="container">
+    <h2 class="text-start mx-5 mb-5 pt-4"><strong id="projekt_header">Meine Projekte</strong></h2>
+   <div class="row mx-5 my-auto justify-content-center">
+
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
+      <div class="card">
+        <img class="card-img-top" src="./pictures/pokofight.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Poko Fight</h4>
+          <a href="https://poko-fight.netlify.app/" class="btn btn-dark align-items-end" role="button">Live Demo</a>
+          <a href="https://github.com/karimnroses/PokeFrontend" class="btn btn-secondary px-4" role="button">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
+      <div class="card">
+        <img class="card-img-top" src="./pictures/myblog.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Blog</h4>
+          <a href="https://blog4groups.netlify.app/" class="btn btn-dark align-items-end" role="button">Live Demo</a>
+          <a href="https://github.com/rubicode01/blog" class="btn btn-secondary px-4" role="button">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
+      <div class="card">
+        <img class="card-img-top" src="./pictures/ticketsystem.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Ticket System Dashboard</h4>
+          <a href="https://hddashboard.netlify.app/" class="btn btn-dark" role="button">Live Demo</a>
+          <a href="https://github.com/karimnroses/ticket_system_backend" class="btn btn-secondary px-4" role="button">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mt-4">
+      <div class="card">
+        <img class="card-img-top" src="./pictures/hackernews.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Hacker News</h4>
+          <a href="https://gethackernews.netlify.app/" class="btn btn-dark" role="button">Live Demo</a>
+          <a href="https://github.com/karimnroses/hacker_news" class="btn btn-secondary px-4" role="button">Code</a>
+        </div>
+      </div>
+    </div>
+
+   </div>
+  </div>
 </div>
 
 <script src="./js/slider.js"></script>
