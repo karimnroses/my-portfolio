@@ -54,6 +54,8 @@ a.middle:before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../pictures/backgroundImage.jpg");
     background-size: cover !important;
     background-repeat: no-repeat;
+     max-width: 100%;
+  height: auto;
   }
 
 
@@ -70,6 +72,14 @@ a.middle:before {
   animation: flip 2s infinite;
   animation-delay: calc(.2s * var(--i))
 }
+
+@media screen and (max-width: 835px) {
+  div.waviy span{
+    font-size: 40px;
+  }
+}
+
+
 @keyframes flip {
   0%, 60% {
     transform: rotateY(360deg) 
@@ -90,13 +100,14 @@ h1 {
   width: 700px;
   left: 50%;
   right: auto;
+  display: table;
 }
 
 h1 span {
   color: white;
   font-size: 40px;
   font-weight: bold;
-
+  display: table;
 }
 
 .message {
@@ -125,7 +136,7 @@ h1 span {
     width: 0;
   }
   15% {
-    width: 525px;;
+    width: 525px;
   }
    30% {
     top: 0.2rem;
@@ -179,6 +190,14 @@ h1 span {
     width: 0;
     text-indent: 0;
   }
+}
+
+
+@media screen and (max-width: 700px) {
+  .message, #word0{
+   display: none;  
+  }
+  
 }
 
 /*Seconde Section*/
