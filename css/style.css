@@ -10,6 +10,7 @@ body{
 /*Navigationsbar*/
 #navbar{
     background-color: black !important;
+    opacity: 0.5;
 }
 
 a.nav-link{
@@ -98,9 +99,8 @@ h1 {
   overflow: hidden;
   position: absolute;
   width: 700px;
-  left: 50%;
+  left: 30%;
   right: auto;
-  display: table;
 }
 
 h1 span {
@@ -194,10 +194,15 @@ h1 span {
 
 
 @media screen and (max-width: 700px) {
+  .waviy span{
+   padding-top: 5rem; 
+  }
+}
+
+@media screen and (max-width: 700px) {
   .message, #word0{
    display: none;  
   }
-  
 }
 
 /*Seconde Section*/
@@ -232,6 +237,10 @@ h1 span {
   font-style: normal;
   color: #4e4e4e;
   text-align: justify;
+}
+
+.figure img{
+  filter: drop-shadow(4px 2px 20px black)
 }
 
 /*Skills-Section*/
